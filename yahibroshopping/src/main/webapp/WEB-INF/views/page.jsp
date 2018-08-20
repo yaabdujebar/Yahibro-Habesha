@@ -24,11 +24,11 @@
 	window.menu = '${title}';
 </script>
 
-
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <!-- Bootstrap core CSS -->
 <link href="${vendor}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<!-- <link href="${css}/bootstab-spacelab-theme.css" rel="stylesheet"> -->
-<link href="${css}/bootatrap-minty-theme.css" rel="stylesheet">
+ <link href="${css}/bootstab-spacelab-theme.css" rel="stylesheet"> 
+<!-- <link href="${css}/bootatrap-minty-theme.css" rel="stylesheet"> -->
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
 
@@ -56,6 +56,11 @@
 			<!-- when user clicks contact us -->
 			<c:if test="${userClickContact == true}">
 				<%@include file="contact.jsp"%>
+			</c:if>
+			
+			<!-- when user clicks contact us -->
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true }">
+				<%@include file="listProducts.jsp"%>
 			</c:if>
 		</div>
 
