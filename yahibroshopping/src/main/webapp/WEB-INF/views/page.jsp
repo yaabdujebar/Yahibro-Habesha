@@ -22,16 +22,24 @@
 <title>Yahibro-Shopping - ${title}</title>
 <script>
 	window.menu = '${title}';
+	window.contextRoot = '${contextRoot}'
 </script>
 
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <!-- Bootstrap core CSS -->
+
 <link href="${vendor}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
- <link href="${css}/bootstab-spacelab-theme.css" rel="stylesheet"> 
+
+<!-- thyme -->
+
+
+<!-- data tables css -->
+<link href="${vendor}/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
 <!-- <link href="${css}/bootatrap-minty-theme.css" rel="stylesheet"> -->
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
-
+<link href="${css}/bootstab-spacelab-theme.css" rel="stylesheet">
 </head>
 
 <body>
@@ -57,10 +65,15 @@
 			<c:if test="${userClickContact == true}">
 				<%@include file="contact.jsp"%>
 			</c:if>
-			
+
 			<!-- when user clicks contact us -->
-			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true }">
+			<c:if
+				test="${userClickAllProducts == true or userClickCategoryProducts == true }">
 				<%@include file="listProducts.jsp"%>
+			</c:if>
+			
+			<c:if test="${userClickShowProduct == true}">
+				<%@include file="singleProduct.jsp"%>
 			</c:if>
 		</div>
 
@@ -71,9 +84,12 @@
 		<script src="${vendor}/jquery/jquery.min.js"></script>
 		<script src="${vendor}/bootstrap/js/bootstrap.bundle.min.js"></script>
 		<!-- self coded java script -->
+
+		<script src="${vendor}/bootstrap/js/dataTables.bootstrap.js"></script>
+		<script src="${vendor}/jquery/jquery.dataTables.js"></script>
 		<script src="${vendor}/bootstrap/js/myapp.js"></script>
 
-		
+
 	</div>
 </body>
 

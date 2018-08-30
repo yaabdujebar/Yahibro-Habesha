@@ -23,8 +23,10 @@ body {
 	position: absolute;
 	bottom: 0;
 	height:60px;
-	background-color: green;
+	
 }
-.derho {
-	background-color: green;
+
+.dataTableImg {
+	width:100px;
+	height:100px;
 }

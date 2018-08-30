@@ -13,6 +13,7 @@ body {
 }
 .content{
 	padding-bottom: 60px;
+	
 }
 .footer{
 	position: absolute;
@@ -21,3 +22,7 @@ body {
 	
 }
 
+.dataTableImg {
+	width:100px;
+	 height:100px;
+}

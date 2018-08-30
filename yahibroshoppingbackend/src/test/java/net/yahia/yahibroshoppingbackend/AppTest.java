@@ -1,4 +1,4 @@
-package net.yahibro.yahibroshoppingbackend;
+package net.yahia.yahibroshoppingbackend;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
